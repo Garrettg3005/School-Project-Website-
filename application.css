@@ -1,0 +1,97 @@
+.header1 {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+}
+
+.smallheader1 {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-left: 46%;
+	margin-right: 46%;
+	padding: 1px;
+    border: 2px solid black;
+	background: navy;
+	opacity: 0.8;
+}
+
+#subhead {
+	font-size: 125%;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+	margin-top: 50px;
+	margin-left: 40%;
+	margin-right: 40%;
+	padding: 10px;
+	border-top: 0.2px solid black; /* Border header blends in with black border for table and does not overlap */
+	border-right: 0.2px solid black;
+	border-left: 0.2px solid black;
+}
+
+
+form {
+	display: table;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	border: thin solid black;
+	background:url(images/mexican.jpg) center; /* Background Image */
+	background-repeat: no-repeat;
+}
+
+#tablecontainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+#tablerow {
+	display: table-row;
+}
+
+#apply {
+	color: white;
+	background: navy;
+}
+
+div.tablerow {
+	display: table-row;
+}
+
+div.tablerow > p, div.tablerow > label, div.tablerow > input {
+	vertical-align: top;
+	display: table-cell;
+	padding: 3px;
+	margin: 3px;
+}
+
+div.tablerow label:first-child {
+	text-align: left;
+	color: black;
+}
+
+legend {
+	font-weight: bold;
+	text-align: left;
+}
+
+form textarea {
+	display: table-cell;
+	display: inline-block;
+	width: 560px;
+	height: 110px; 
+}
+
+a:link {
+  color: red;
+}
+
+a:visited { /* Visited link */
+  color: white;
+}
+
+a:hover { /* Mouse over link */
+  color: lightblue;

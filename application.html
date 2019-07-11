@@ -1,0 +1,153 @@
+<!doctype html>
+<!-- By Garrett Guthrie -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Application</title> 
+		<link href="homepage.css" type="text/css" rel="stylesheet">
+		<link href="application.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+	
+	<h1 class="header1">Application</h1>
+	<h1 class="smallheader1"> <a href="jobs.html">Back </a> </h1> <!-- Back button -->
+    <h2 id="subhead">Fill out and submit the form to apply</h2>
+	<!-- This form is a job application. It asks the user questions about what he/she wants to apply for, their background,
+	 and basic contact information such as name, email, and phone number -->
+    <form action="appsubmit.html" method="get"> 
+	<fieldset>                             
+		<legend>General</legend>
+		<div class="tablerow">             
+			<label for="jobtype">
+          	Job applying for:
+			</label>
+            <select name="jobtype"> <!-- Job type user is applying for -->
+              <option value="Dishwasher">Dishwasher</option>
+              <option value="Line Cook">Line Cook</option>
+			  <option value="Prep Cook">Prep Cook</option>
+              <option value="Busser">Busser</option>
+			  <option value="Host/Hostess">Host/Hostess</option">
+            </select>
+		</div>
+		<br>
+		<div class="tablerow">
+			<label for="resume"> <!-- Upload resume -->
+			Upload your resume and/or cover letter:</label>
+			<input type="file" name="doc"> <!-- Input type file input -->
+		</div>
+		</br>
+		<div class="tablerow">
+			<label for="job">Last job and responsibilites:</label>
+            <textarea id="job" name="job" required></textarea> 
+		</div>
+		<br>
+		<br>
+		<div class="tablerow">
+			<label for="fired">Have you ever been fired?<br><br></label>
+			<input type="radio" name="fired" value="Yes" required>Yes
+			<input type="radio" name="fired" value="No" required>No
+		</div>
+		<br>
+		<div class="tablerow">
+			<label for="firedbox">Explain: (ignore if does not apply)</label>
+			<textarea id="firedbox" name="fired"></textarea>
+		</div>
+		<br>
+		<div class="tablerow">
+			<label for="date">Soonest available to work:</label>
+			<input type="date" name="date" required> <!-- Date type input -->
+		</div>
+		</br>
+		<div class="tablerow">
+			<label for="hours">Desired number of hours (0-40 per week):</label>
+			<input type="number" name="hours" min="0" max="40" required> <!-- Numbers type input -->
+		</div>
+		<br> <!-- Education info for user -->
+		<div class="tablerow">
+			<label for="HS">High School Attended:</label>
+			<input type="text" name="HSattended" value="" required>
+		</div>
+		<br>
+		<div class="tablerow">
+			<label for="College">College Attended:</label>
+			<input type="text" name="Collegeattended" value="" placeholder="Spokane Falls Community College" required>
+		</div>
+		<br>
+		<div class="tablerow">             
+			<label for="schoolexp">
+          	Education level:
+			</label>
+            <select name="schoolexp" required> 
+              <option value="Masters+">Masters or beyond</option>
+              <option value="Bachelors">Bachelors</option>
+			  <option value="AA">AA</option>
+              <option value="HighSchoolDip">High School Diploma</option>
+			  <option value="GED">GED or Equiv</option>
+			  <option value="Non">Did not complete HS</option>
+            </select>
+		</div>
+		<br>
+		<div class="tablerow">
+			<label for="GPA">GPA:</label>
+			<input type="text" name="GPA" value="" required> <!-- Numbers type input -->
+		</div>
+		<br>
+		<div class="Field of Study">
+			<label for="Field">Field of Study:</label>
+			<input type="text" name="Field of Study" value="" required>
+		</div>
+	</fieldset>
+	
+	<!-- 2nd fieldset -->
+	<br>
+	<fieldset>                          
+		<legend>Personal Info</legend> <!-- This part asks for basic contact information -->
+		<!-- 5 table rows below -->
+		<div class="tablerow">
+			<label for="name">Name:</label>
+			<input type="text" name="name" value="" placeholder="John Doe" required> </div>
+		<div class="tablerow">
+			<label for="birthday">DOB</label>
+			<input type="date" name="birthday" value=""> <!-- Date type input -->
+		</div>
+		<div class="tablerow">
+			<label for="address">Address:</label>
+			<input type="text" name="address" value="" placeholder="1234 Fake Address St."> </div> 
+		<div class="tablerow">
+			<label for="state">State (XX):</label>
+			<input type="text" name="state" value="" placeholder="WA"> </div>
+		<div class="tablerow">
+			<label for="city">City:</label>
+			<input type="text" name="city" value="" placeholder="Spokane"> </div>
+		<div class="tablerow">
+			<label for="phone">Phone:</label>
+			<input type="tel" name="phone" value="" placeholder="513-546-3414" required> </div>
+		<div class="tablerow">
+			<label for="email">Email:</label>
+			<input type="email" name="email" value="" placeholder="johndoe@gmail.com" required> </div>
+		<div class="tablerow">
+		
+			<label>Best form of contact:</label>
+			<p>
+            	<input type="radio" name="extras[]" value="text" checked> 
+					<label for="call">Text</label><br>
+            	<input type="radio" name="extras[]" value="call">
+            		<label for="catalog_extras">Call</label>
+				<input type="radio" name="extras[]" value="email">
+            		<label for="email">Email</label>
+			</p>
+		</div>
+		
+		<div class="tablerow"> <!-- Textarea input for fun -->
+			<label for="favorite">Favorite part about El Burrito Macho:</label>
+            <textarea name="favorite"> </textarea> </div>
+		<div class="tablerow">
+			<label></label>
+			<input id="apply" type="submit" value="Apply"> 
+		</div>
+	</fieldset>
+    </form>
+	<footer class="footer">Created by <i> <a style="color: crimson;" href="Garrett Guthrie.html">Garrett Guthrie</a> </i> </footer> 
+	<!-- Styling a footer (link was made for fun) ^ -->
+  </body>
+</html>
