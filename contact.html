@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Us</title>
+		<link href="homepage.css" type="text/css" rel="stylesheet">
+		<link href="contact.css" type="text/css" rel="stylesheet">
+		<link href="appsubmit.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+	
+	<h1 class="header1">Contact Us</h1>
+	
+	<nav id="navcontact">
+		<ul>
+			<li> <a href="homepage.html">Home</a> </li>
+			<li> <a href="location.html">Locations</a> </li>
+			<li> <a href="faq.html">F.A.Q</a> </li>
+			<li> <a href="menu.html" title="Open the menu page in a new window">Menu</a> </li>
+			<li> <a href="hours.html">Hours</a> </li>
+			<li> <a href="media.html">Media</a> </li>
+			<li> <a href="events.html">Events</a> </li>
+			<li> <a href="jobs.html">Jobs</a> </li>
+			<li> <a href="about.html">About</a> </li>
+			<li> <a href="contact.html">Contact Us</a> </li>
+	</ul>
+</nav>
+    <h2 id="subheader">Fill out the form below and click "submit" to get in contact with us.</h2>
+	<!-- Contact form. This form contains a fieldset, an info section regarding info about the inquiry, and finally contact information. -->
+    <form id="background2" action="submit.html" method="post"> 
+	<fieldset>                             
+		<legend>General</legend>
+		<div class="tablerow">             
+			<label for="general">
+          	Inquiry type:
+			</label>
+            <select id="inquiry" name="inquiry" required> 
+              <option value="Question">Question</option>
+              <option value="Comment">Comment</option>
+              <option value="Complaint">Complaint</option>
+            </select>
+		</div>
+		<div class="tablerow">
+			<label>Best form of contact:</label>
+			<p>
+            	<input type="radio" name="extras[]" value="text" checked> 
+					<label for="call">Text</label><br>
+            	<input type="radio" name="extras[]" value="call">
+            		<label for="catalog_extras">Call</label>
+				<input type="radio" name="extras[]" value="email">
+            		<label for="email">Email</label>
+			</p>
+		</div>
+	</fieldset>
+	
+	<fieldset>                          
+		<legend>Info</legend>
+		<!-- 5 table rows below -->
+		<div class="tablerow">
+			<label for="name">Name:</label>
+			<input type="text" name="name" value="" placeholder="John Doe" required> </div>
+		<div class="tablerow">
+			<label for="phone">Phone:</label>
+			<input type="tel" name="phone" value="" placeholder="513-546-3414" required> </div>
+		<div class="tablerow">
+			<label for="email">Email:</label>
+			<input type="email" name="email" value="" placeholder="johndoe@gmail.com" required> </div>
+		<div class="tablerow">
+			<label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"> </textarea> </div>
+		<div class="tablerow">
+			<label></label>
+			<input type="submit" value="Submit"> 
+		</div>
+	</fieldset>
+    </form>
+  </body>
+  <div class="container1"> <!-- Responsive Newsletter signup -->
+    <form action="#"> 
+      <p style="font-size: 15px;">Be the first in the loop and sign up below.</p>
+      <div class="email-box">
+         <!-- This is the box that slides out -->
+        <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
+        <button class="btn" type="button" name="button">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</html>

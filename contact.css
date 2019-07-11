@@ -1,0 +1,96 @@
+#navcontact {
+	margin: 10px 390px 0px 390px;
+}
+
+nav ul {
+	position: relative;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 25px 5px 20px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+li.selected, li:hover {
+	background-color: #c8b99c;
+}
+
+.lifont {
+	font-size: medium;
+}
+
+.header1 {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+}
+
+#subheader {
+	font-size: 125%;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+
+div#tablecontainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+#tablerow {
+	display: table-row;
+}
+
+#background2 {
+	display: table;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 25%;
+	border: thin solid black;
+	background:url(images/background2.jpg) center; /* Background Image */
+	background-repeat: no-repeat;
+}
+
+div.tablerow {
+	display: table-row;
+}
+
+div.tablerow > p, div.tablerow > label, div.tablerow > input {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+	margin: 3px;
+}
+
+div.tablerow label:first-child {
+	text-align: left;
+	color: black;
+}
+
+legend {
+	font-weight: bold;
+	text-align: left;
+}
+
+form textarea {
+	display: table-cell;
+	display: inline;
+	width: 560px;
+	height: 110px; 
+}

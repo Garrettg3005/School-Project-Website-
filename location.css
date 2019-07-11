@@ -1,0 +1,52 @@
+#navlocation {
+	margin: 10px 390px 0px 410px; 
+}
+
+#location {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+}
+
+nav ul {
+	position: absolute;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+	position: relative;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 40px 5px 20px; /* Different padding on all 4 sides, top, right, bottom, and left */
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+div.background {
+  background: url(images/background.jpg);
+  border: 2px solid black;
+}
+
+div.transparentbox {
+  margin: 25px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+div.transparentbox p {
+  margin: 4%;
+  font-weight: bold;
+  color: #000000;
+}

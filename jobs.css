@@ -1,0 +1,84 @@
+#navjobs {
+	margin: 10px 400px 0px 390px;
+}
+
+nav ul {
+	position: relative;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 25px 5px 20px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+li.selected, li:hover {
+	background-color: #c8b99c;
+}
+
+.lifont {
+	font-size: medium;
+}
+
+.header1 {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+	margin-right: 30px;
+}
+
+#subhead {
+	font-size: 125%;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+
+#pagewrap3 {
+    width: 500px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: 34%;
+}
+
+.eventsheader1 {
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+}
+
+.article1 {
+	width: 1000px; 
+	text-align: center;
+	display: table;
+	display: table-row;
+	display: table-cell;
+	padding: 16px;
+	padding-left: 10px;
+}
+
+.article1 p:first-line {
+	font-style: italic; /* Descendent pseudo-element being used */
+}
+
+
+::selection { /* Not taught in class...highlight something on jobs.html page and see for yourself. */
+  color: magenta; 
+  background: black;
+}

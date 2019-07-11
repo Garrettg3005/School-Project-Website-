@@ -1,0 +1,95 @@
+body { 
+  background-color: beige;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  margin: 0px;
+  margin-top: 0px;
+  position: relative; /* Jello layout */
+}
+
+.header {
+	margin-top: 0px;
+	margin: 10px;
+}
+
+.header1 {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+}
+
+#machoheader { 
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 1%;
+}
+
+.header2 {
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 40px;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 1.5%;
+	margin-bottom: 0.5%;
+	font-size: 0.75em;
+}
+	
+#navhome {
+	margin: 10px 375px 0px 415px; /* All margins are different */
+}
+
+nav ul { /* Navigation Bar */
+	position: relative; /* Most css files will follow this page, meaning nav ul will retain a relative position */
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 25px 5px 20px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+nav ul li a:link {
+	color: tomato; /* Default color for menu on this page */
+	border-bottom: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+nav ul li a:visited {
+color: green; } /* Changes after visited */
+
+nav ul li a:hover { /* Changes color when mouse hovers over link */
+color: teal; }
+
+li.selected, li:hover {
+	background-color: #c8b99c;
+}
+
+#hometransparentbox {
+  margin: 20px 180px;
+  padding: 1px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#hometransparentbox p {
+  margin: 1%;
+  font-weight: bold;
+}
+
+i { text-decoration: underline; }
+

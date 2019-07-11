@@ -1,0 +1,129 @@
+body { 
+  background-color: beige;
+  font-family: 'Gafata', sans-serif; /* Web font */
+  font-size: small;
+  margin: 0px;
+  margin-top: 0px;
+  position: absolute; /* Absolute or frozen layout */
+}
+
+#navhours {
+margin: 10px 390px 0px 410px; }
+
+#hours {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+}
+
+#hoursdesc {
+	font-size: 20px;
+	margin-left: 45%;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 1px;
+}
+
+#hoursbox { /* Rotating green open box! */
+	margin-left: 46%;
+	margin-top: 13.6%;
+	position: absolute; /* Absolute or frozen layout */
+	top: 10px;
+	left: 10px;
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	transition: transform 4s;
+}
+
+#hoursbox:hover {
+	transform: rotate(180deg);
+}
+
+#hourscloseddesc {
+	font-size: 20px;
+	margin-left: 45%;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 1px;
+}
+
+#hoursboxclosed { /* Rotating red closed box! */
+	margin-left: 46%;
+	margin-top: 16.3%;
+	position: absolute; /* Absolute or frozen layout again... */
+	top: 10px;
+	left: 10px;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	transition: transform 4s;
+}
+
+#hoursboxclosed:hover {
+	transform: rotate(180deg);
+}
+
+nav ul {
+	position: absolute;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+	position: relative;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 25px 5px 20px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+li.selected, li:hover {
+	background-color: #c8b99c;
+}
+
+table { /* Table (data) */
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+border: medium solid black;         
+border-spacing: 10px 20px; }
+
+td, th {
+	border: thin solid black;
+	padding: 5px;
+}
+
+th { 
+	background-color: darksalmon;
+	color: black; 
+}
+
+.days { 
+	text-align:	center;
+}    
+
+.times {
+	background-color: khaki;
+	text-align: center;
+} 
+
+.closed {
+	background-color: red;
+	text-align: center;
+}	
+
+
+.open {
+	background-color: green;
+	text-align: center;
+}             

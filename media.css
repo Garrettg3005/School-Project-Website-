@@ -1,0 +1,71 @@
+body {
+	font-family: 'Varela Round', sans-serif; /* Web font */
+	background:url(images/mexican.jpg) center; /* Background Image */
+	background-repeat: no-repeat;
+	margin: 20px;
+	position: relative;
+}
+
+#media {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-bottom: 0px;
+}
+
+#caption {
+	font-size: 20px;
+	text-shadow: 0px 0px 3px #FF0000;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#submedia {
+	font-size: 20px;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-left: 38%;
+	margin-bottom: 0px;
+}
+
+#firstvid { /* Video formatting */
+	margin-top: 0%;
+	margin-left: 29.5%;
+	margin-bottom: 1%;
+}
+
+#audiocaption { /* Caption below audio/sound */
+	font-size: 16px;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-left: 30%;
+}
+
+#navmedia {
+	margin: 10px 375px 0px 415px;
+}
+
+nav ul {
+	position: relative;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 25px 5px 20px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+li.selected, li:hover {
+	background-color: #c8b99c;
+}

@@ -1,0 +1,111 @@
+#navstory {
+	margin: 10px 400px 0px 415px;
+}
+
+nav ul { /* Navigation Bar */
+	position: relative;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 25px 5px 20px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: black;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+li.selected, li:hover {
+	background-color: #c8b99c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Another Web font */
+}
+
+header {
+	margin: 0 auto;
+	width: 70%;
+}
+
+a {
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  transition: all .5s;
+}
+
+section {
+  padding: 10px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: grid; /* New grid display */
+  grid-template-columns: 1, 1fr;
+  margin: 30px 15px 0px 15px;
+}
+
+#mainstoryheader {
+  margin: 1%;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0px 0px 3px #FF0000;;
+}
+
+#storyheader {
+  margin: 4%;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 3px #FF0000;;
+}
+
+#storybox {
+  padding: 0px;
+  background: linear-gradient(yellow,red);
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#storybox p {
+  margin: 4%;
+  font-weight: bold;
+}
+
+#backbtn { 
+	background: linear-gradient(yellow,red);
+	text-align: center;
+	padding: 2px;
+	border-radius: 50px; /* Rounded back button */
+	text-transform: uppercase;
+	font-size: 16px;
+	text-shadow: 0px 0px 3px #FF0000;
+	margin-left: 44%;
+	margin-right: 44%;
+	opacity: 0.8;
+}
