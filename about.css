@@ -1,0 +1,174 @@
+/* Trying something new here on this page... */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+#navabout {
+	margin: 10px 375px 0px 415px; /* All margins are different */
+}
+
+nav ul { /* Navigation Bar */
+	position: relative;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 25px 5px 20px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+#navabout ul li a:link, #navabout ul li a:visited {
+	color: #954b4b;
+	border-bottom: black;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase
+}
+
+li.selected, li:hover {
+	background-color: #c8b99c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Another Web font */
+}
+
+header {
+	margin: 0 auto;
+	width: 70%;
+}
+
+a {
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  transition: all .5s;
+}
+
+section {
+  padding: 10px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container1 {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: grid; /* New grid display! */
+  grid-template-columns: 1, 1fr;
+  margin: 30px 15px 0px 15px;
+}
+
+#menuheader {
+  margin: 1%;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0px 0px 3px #FF0000;;
+}
+
+#boxheader {
+  margin: 4%;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 3px #FF0000;;
+}
+
+.singleabout { /* All NEW */
+  position: relative;
+  overflow: hidden;
+  max-height: 580px;
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 100%;
+  box-sizing: border-box; /* Box properties... */
+  box-shadow: 0 2px 10px #ccc;
+  transition: all .5s;
+}
+
+.singleabout:hover { /* Makes box responsive */
+  box-shadow: 0 2px 13px #ccc;
+  transition: all .5s; /* Transition when hovering */
+}
+
+.singleabout:hover img { /* Again, more responsive! */
+  transform: scale(1.1); 
+  transition: all .4s;
+}
+
+.aboutContent {
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background: linear-gradient(red, yellow); /* NEW, linear gradient */
+  transition: all .5s;
+}
+
+.singleabout:hover .aboutContent {
+  bottom: 0;
+  transition: all .5s;
+}
+ 
+.aboutContent h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.aboutContent h3 span {
+  display: block; /* New display style */
+  font-size: 60%;
+  margin-top: 5px;
+  font-weight: 600;
+  color: white;
+}
+ 
+.aboutContent a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.aboutContent .btn {
+  display: inline-block; /* Inline block display */
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px; 
+  font-weight: 400;
+}
+
+.aboutContent .btn:hover {
+  background: rgba(243, 243, 21,1.0); /* Use of rgba [including 1.0] */
+  transition: all .5s;
+  text-decoration: none;
+}
+.aboutContent a:hover {
+  text-decoration: underline;
+} /* A lot of properties surround .aboutContent */
+
+#box {
+  padding: 0px;
+  background: linear-gradient(red,yellow); /* Never taught linear gradient */
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* Filter */
+}
+
+#box p {
+  margin: 4%;
+  font-weight: bold;
+}
